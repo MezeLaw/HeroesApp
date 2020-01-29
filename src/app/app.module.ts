@@ -20,6 +20,8 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 
 import { HeroesService } from './servicios/heroes.service';
 import { HeroeComponent } from './components/heroe/heroe.component';
+import { BuscarHeroeComponent } from './components/buscar-heroe/buscar-heroe.component';
+import { BusquedaHeroeComponent } from './components/busqueda-heroe/busqueda-heroe.component';
 
 
 
@@ -30,7 +32,9 @@ import { HeroeComponent } from './components/heroe/heroe.component';
     HomeComponent,
     AboutComponent,
     HeroesComponent,
-    HeroeComponent
+    HeroeComponent,
+    BuscarHeroeComponent,
+    BusquedaHeroeComponent
   ],
   imports: [
     BrowserModule,
