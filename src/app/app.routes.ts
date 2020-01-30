@@ -4,6 +4,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscarHeroeComponent } from './components/buscar-heroe/buscar-heroe.component';
+import { BusquedaHeroeComponent } from './components/busqueda-heroe/busqueda-heroe.component';
 
 
 const APP_ROUTES: Routes = [
@@ -12,6 +13,7 @@ const APP_ROUTES: Routes = [
  { path: 'heroes', component: HeroesComponent},
  { path: 'heroe/:id', component: HeroeComponent},
  { path: 'buscarHeroe/:termino', component: BuscarHeroeComponent},
+ { path: 'busqueda/:nombre', component: BusquedaHeroeComponent},
  { path: '**', pathMatch: 'full', redirectTo:'home'}
 ];
 

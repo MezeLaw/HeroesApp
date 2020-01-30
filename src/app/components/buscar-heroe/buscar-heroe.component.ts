@@ -11,7 +11,8 @@ export class BuscarHeroeComponent   {
   
   heroes:Heroe[] = [];
   constructor( private heroesSerivce:HeroesService, 
-               private activatedRouter:ActivatedRoute) { 
+               private activatedRouter:ActivatedRoute,
+               private router:Router) { 
     
                 this.activatedRouter.params.subscribe( params => {
                   let parametroBusqueda = params["termino"];
@@ -30,7 +31,7 @@ export class BuscarHeroeComponent   {
   verHeroePorNombre( nombre:string ){
     console.log(nombre);
     
-    //this.router.navigate(['/heroe', idx]);
+    this.router.navigate(['/busqueda', nombre]);
      
   }
 
